@@ -43,7 +43,7 @@ const UserSchema = new Schema<UserDocument>({
         required: true,
     },
     movies: {
-        type: [Schema],
+        type: [movieModelSchema], // make movies an array of
         default: [],
     },
 });
